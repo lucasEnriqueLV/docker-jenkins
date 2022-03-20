@@ -3,11 +3,11 @@ FROM jenkins/jenkins:lts
 # Docker install
 USER root
 RUN apt-get update && apt-get install -y \
-       apt-transport-https \
-       ca-certificates \
-       curl \
-       gnupg2 \
-       software-properties-common
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        gnupg2 \
+        software-properties-common
 
 USER root
 
@@ -21,5 +21,10 @@ RUN apt-get update -qq && \
     apt-get install -qqy docker-ce && \
     usermod -aG docker jenkins && \
     chown -R jenkins:jenkins $JENKINS_HOME/
+
+# Set env variables
+ENV JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF-8' \
+    LANG="en_US.UTF-8"
+    
 
 USER jenkins
