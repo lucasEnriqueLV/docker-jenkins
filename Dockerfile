@@ -9,8 +9,6 @@ RUN apt-get update && apt-get install -y \
         gnupg2 \
         software-properties-common
 
-USER root
-
 # Install Docker from official repo
 RUN apt-get update -qq && \
     apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common && \
