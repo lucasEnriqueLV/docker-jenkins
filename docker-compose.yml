@@ -20,7 +20,6 @@ services:
       - ./jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
 
-
   grafana:
     container_name: grafana
     image: grafana/grafana:9.3.8
@@ -34,6 +33,7 @@ services:
       - GF_AUTH_BASIC_ENABLED=false
     volumes:
       - ./grafana:/etc/grafana/provisioning/
+      - ./grafana:/var/lib/grafana/
 
   influxdb:
     container_name: influxDB

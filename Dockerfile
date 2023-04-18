@@ -2,12 +2,6 @@ FROM jenkins/jenkins:lts
 
 # Docker install
 USER root
-RUN apt-get update && apt-get install -y \
-        apt-transport-https \
-        ca-certificates \
-        curl \
-        gnupg2 \
-        software-properties-common
 
 # Install Docker from official repo
 RUN apt-get update -qq && \
