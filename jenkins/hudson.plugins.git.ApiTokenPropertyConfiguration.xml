@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.git.ApiTokenPropertyConfiguration plugin="git@5.0.1">
+  <apiTokens>
+    <hudson.plugins.git.ApiTokenPropertyConfiguration_-HashedApiToken>
+      <uuid>6c9600f0-b429-404f-bacf-4b9723b53930</uuid>
+      <name>token</name>
+      <hash>b17423575baa9d9dfcd155aa69df52db95dcc952ae6b9d8046a3d0b294dec8ca</hash>
+    </hudson.plugins.git.ApiTokenPropertyConfiguration_-HashedApiToken>
+  </apiTokens>
+</hudson.plugins.git.ApiTokenPropertyConfiguration>
