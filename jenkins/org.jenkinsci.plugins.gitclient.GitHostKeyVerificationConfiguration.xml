@@ -1,0 +1,6 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration plugin="git-client@4.2.0">
+  <sshHostKeyVerificationStrategy class="org.jenkinsci.plugins.gitclient.verifier.ManuallyProvidedKeyVerificationStrategy">
+    <approvedHostKeys>ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOKusdi+AuSOg23o+eryb+zTVDyBrXxLJ315ahwKEVSM lelv@icomp.ufam.edu.br</approvedHostKeys>
+  </sshHostKeyVerificationStrategy>
+</org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration>

@@ -34,6 +34,7 @@ services:
     volumes:
       - ./grafana:/etc/grafana/provisioning/
       - ./grafana:/var/lib/grafana/
+    user: "472"
 
   influxdb:
     container_name: influxDB
