@@ -22,7 +22,8 @@ services:
 
   grafana:
     container_name: grafana
-    image: grafana/grafana:9.3.8
+    image: grafana/grafana
+    user: "4096"
     networks:
       - grafana
     ports:
@@ -34,7 +35,6 @@ services:
     volumes:
       - ./grafana:/etc/grafana/provisioning/
       - ./grafana:/var/lib/grafana/
-    user: "472"
 
   influxdb:
     container_name: influxDB
